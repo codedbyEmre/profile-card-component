@@ -1,0 +1,97 @@
+@import 'configs';
+
+*{
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-cyan;
+    padding: 1rem;
+    transition: 0.3s ease all;
+    .top-circle{
+        position: absolute;
+        top: -60%;
+        left: -18%;
+    }
+    .bottom-circle{
+        position: absolute;
+        bottom: -80%;
+        right: -15%;
+    }
+    .card{
+        background-color: #fff;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px $dark-grayish-blue;
+        .profile-img{
+            position: absolute;
+            top: 5em;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+        .card-middle{
+            padding: 2.5rem 1rem 1rem;
+            text-align: center;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h5{
+                    font-size: 1.25rem;
+                    color: $very-dark-desaturated-blue;
+                }
+                h4{
+                    margin-left: 0.75rem;
+                    font-size: 1.3rem;
+                    color: $dark-grayish-blue;
+                    font-weight: 400;
+                }
+            }
+            p{
+                margin-top: -1rem;
+                color: $dark-grayish-blue;
+                font-size: 1rem;
+            }
+        }
+        .card-bottom{
+            display: flex;
+            justify-content: space-evenly;
+            border-top: 1px solid hsl(0, 0%, 81%);
+            padding: 1rem 1rem 1rem;
+            div{
+                text-align: center;
+                h2{
+                    font-size: 1.25rem;
+                    margin-bottom: 0;
+                }
+                p{
+                    color: $dark-gray;
+                    margin-top: 0.5rem;
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .attribution{
+        position: absolute;
+        bottom: 1rem;
+        color: #fff;
+        font-size: 0.75rem;
+        a{
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    }
+}
